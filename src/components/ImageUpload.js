@@ -94,8 +94,7 @@ function ImageUpload() {
 
                 {response && (
                     <div className="mt-6 p-4 bg-gray-100 rounded">
-                        <h3 className="text-lg font-semibold mb-2">Response:</h3>
-                        <pre className="text-sm text-gray-700">{JSON.stringify(response, null, 2)}</pre>
+                        <pre className="text-sm text-gray-700">Score: {(Number(response.data.score)).toFixed(3)}</pre>
                     </div>
                 )}
             </div>

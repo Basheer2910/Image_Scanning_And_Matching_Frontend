@@ -62,7 +62,7 @@ function ImageUpload() {
                     <label className="block text-gray-700 font-medium mb-2">Student Answer Sheet:</label>
                     <input
                         type="file"
-                        accept="image/*"
+                        accept="*"
                         onChange={(e) => handleFileChange(e, setStudentImage)}
                         className="w-full p-2 border rounded"
                     />

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body, .font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.upload-box {
+    border: 2px dashed rgba(234, 179, 8, 0.3);
+    transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+    border-color: rgba(234, 179, 8, 0.6);
+    transform: translateY(-2px);
+}
+
+.upload-box.active {
+    border-color: rgb(234, 179, 8);
+    background-color: rgba(234, 179, 8, 0.05);
+}
+
+.file-input {
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+}
+
+.file-label {
+    transition: all 0.3s ease;
+}
+
+.file-label:hover {
+    transform: scale(1.02);
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, rgba(234, 179, 8, 0.9) 0%, rgba(234, 179, 8, 0.7) 100%);
+    box-shadow: 0 4px 15px rgba(234, 179, 8, 0.3);
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(234, 179, 8, 0.4);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(234, 179, 8, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(234, 179, 8, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(234, 179, 8, 0);
+    }
+}
+
+.glow-text {
+  text-shadow:
+    0 0 5px #facc15,
+    0 0 10px #facc15,
+    0 0 15px #facc15,
+    0 0 20px #facc15;
+  animation: glowPulse 2s infinite alternate;
+}
+
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 5px #facc15, 0 0 10px #facc15;
+  }
+  100% {
+    text-shadow: 0 0 10px #facc15, 0 0 20px #facc15, 0 0 30px #facc15;
+  }
+}
+.glow-text {
+    text-shadow:
+        0 0 5px rgba(234, 179, 8, 0.7),
+        0 0 10px rgba(234, 179, 8, 0.8),
+        0 0 15px rgba(234, 179, 8, 0.9);
+    animation: glowPulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowPulse {
+    0% {
+        text-shadow:
+            0 0 5px rgba(234, 179, 8, 0.5),
+            0 0 10px rgba(234, 179, 8, 0.6),
+            0 0 15px rgba(234, 179, 8, 0.7);
+    }
+    100% {
+        text-shadow:
+            0 0 10px rgba(234, 179, 8, 1),
+            0 0 20px rgba(234, 179, 8, 1),
+            0 0 30px rgba(234, 179, 8, 1);
+    }
+}
